@@ -1,0 +1,135 @@
+*,::before, ::after{
+
+ margin :0;
+
+ padding :0;
+
+ box-sizing: border-box ;
+
+}
+
+body {
+
+    font-size: 15pt;
+
+    display: flex;
+
+    justify-content :center ;
+
+    align-items :center ;
+
+    flex-direction :column ;
+
+    min-height :100vh ;
+
+}
+
+.battery_ 
+
+{
+
+ 
+
+ width: 95px;
+
+ height: 45px ;
+
+ border :1px solid #ccc ;
+
+ position :relative ;
+
+ padding: 2px ;
+
+}
+
+.battery_::before {
+
+ content: "";
+
+ width: 8px;
+
+ height: 35px ;
+
+ border-radius :3px;
+
+ border :1px solid #ccc;
+
+ border-left: none;
+
+ top: 8%;
+
+ right: -7.4%;
+
+ position :absolute ;
+
+}
+
+.battery_ span 
+
+{
+
+ display: block ;
+
+ 
+
+ width: 0;
+
+ 
+
+ height: 100%;
+
+ 
+
+ background-color: hsla(330, 36%, 53%, 1);
+
+ 
+
+ background-color: linear-gradient(90deg, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+
+ 
+
+ background-color: -moz-linear-gradient(90deg, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+
+ 
+
+ background-color: -webkit-linear-gradient(90deg, hsla(330, 36%, 53%, 1) 0%, hsla(289, 68%, 19%, 1) 100%);
+
+ 
+
+ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#B15B86", endColorstr="#440F50", GradientType=1); 
+
+ 
+
+ 
+
+ transition: background-color .2s ease-in-out ;
+
+}
+
+.battery_   span.charging{
+
+ 
+
+ background-color: hsla(340, 80%, 69%, 1);
+
+ 
+
+ background-color: linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+ 
+
+ background-color: -moz-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+ 
+
+ background-color: -webkit-linear-gradient(90deg, hsla(340, 80%, 69%, 1) 0%, hsla(15, 93%, 71%, 1) 100%);
+
+ 
+
+ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#EF709B", endColorstr="#FA9372", GradientType=1);
+
+transition: background-color .2s ease-in-out ;
+
+ 
+
+} 
